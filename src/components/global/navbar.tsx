@@ -4,10 +4,10 @@ import React from 'react'
 
 type Props = {}
 
-const Header = async (props: Props) => {
+const NavBar = async (props: Props) => {
     const user = true;
   return (
-    <div className="flex justify-between items-center fixed top-0 left-0 right-0 bg-black/50 p-4 border-b-[1px] border-neutral-900">
+    <header className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between">
         {/* logo */}
         <h1 className="font-bold text-lg"><span className='text-xl font-extrabold'>A</span>uto<span className='text-xl font-extrabold'>B</span>uild</h1>
         {/* navigation */}
@@ -47,8 +47,8 @@ const Header = async (props: Props) => {
             
             <MenuIcon className="md:hidden" />
         </div>
-    </div>
+    </header>
   )
 }
 
-export default Header
+export default NavBar
